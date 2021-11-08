@@ -1,0 +1,215 @@
+/* TABLETTE */
+@media only screen and (max-width: 992px) {
+  /* GENERAL */
+
+  h1 {
+    font-size: 3vw;
+  }
+
+  h2 {
+    font-size: 2vw;
+  }
+
+  p,
+  a,
+  i,
+  li,
+  span {
+    font-size: 2vw;
+  }
+
+  /* HEADER */
+  header {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .logo {
+    align-self: center;
+  }
+
+  .navigation nav {
+    order: 3;
+  }
+
+  .navigation nav ul {
+    width: 100%;
+  }
+
+  .navigation nav li {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .navigation nav li a {
+    padding: inherit;
+  }
+
+  .navigation nav li a:hover {
+    border-top: none;
+  }
+
+  .navigation nav li:hover {
+    border-bottom-color: #0065fc;
+  }
+
+  /* LODGING & POPULAR */
+
+  .lodpop__inverse:first-child {
+    order: 2;
+  }
+
+  .lodpop__inverse:nth-child(2) {
+    order: 1;
+  }
+
+  .lodpop_section {
+    flex-direction: column;
+  }
+
+  .popular,
+  .lodging {
+    width: 100%;
+  }
+
+  /* LODGING */
+
+  .lodging__all {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lodging__card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .lodgingcard__img img {
+    max-height: 200px;
+  }
+
+  /* POPULAR */
+
+  .popular__card {
+    width: auto;
+  }
+
+  .popularcard__img img {
+    aspect-ratio: 1/3;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .popular__details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: initial;
+    min-width: 50%;
+  }
+
+  /* ACTIVITY */
+
+  .activity__all {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .activitycard__col {
+    width: 100%;
+  }
+
+  .activitycard__big {
+    width: 100%;
+  }
+  .activitycard__medium {
+    height: 50%;
+  }
+  .activitycard__small {
+    height: auto;
+  }
+
+  .activity__card {
+    width: 100%;
+    height: 250px;
+  }
+  .activitycard__title {
+    font-weight: bold;
+    line-height: 1;
+    padding: 0 20px;
+  }
+  .activitycard__img {
+    width: 100%;
+    position: relative;
+    flex-grow: 1;
+  }
+  .activitycard__img img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  /* FOOTER */
+
+  .footer__bgext {
+    flex-direction: column;
+  }
+
+  .footer__ul {
+    min-width: 400px;
+  }
+}
+
+/* MOBILE 768 */
+
+@media only screen and (max-width: 768px) {
+  /* GENERAL */
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  p,
+  a,
+  i,
+  li,
+  span {
+    font-size: 4vw;
+  }
+
+  /* RESEARCH */
+
+  .research__button {
+    display: flex;
+    background-color: #0065fc;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fa-search {
+    display: initial;
+  }
+
+  .research__txtbt {
+    display: none;
+  }
+}
