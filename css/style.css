@@ -148,7 +148,7 @@ input {
 .research__txtbt:hover {
   background-color: #f2f2f2;
   color: #0065fc;
-  font-size: 18px;  
+  font-size: 18px;
   transition-duration: 0.4s;
 }
 
@@ -187,7 +187,7 @@ input {
 .filters__effect {
   opacity: 1;
   transition: scale 0.4s 0.1s;
-  transition: box-shadow 1s .1s;
+  transition: box-shadow 1s 0.1s;
 }
 
 .filters__effect:hover {
@@ -230,6 +230,7 @@ input {
 .lodpop_section {
   display: flex;
   gap: 20px;
+  padding: 10px;
 }
 
 /* LODGING */
@@ -408,6 +409,8 @@ input {
   height: 636px;
 }
 
+/* ACTIVITY CARDS */
+
 .activitycard__col {
   flex-grow: 1;
   display: flex;
@@ -417,19 +420,17 @@ input {
   width: 25%;
 }
 
-/* ACTIVITY CARDS */
-
 .activitycard__big {
   flex-grow: 1;
   width: 25%;
 }
 .activitycard__medium {
-  display: flex;
   height: 324px;
 }
 .activitycard__small {
   display: flex;
   flex-grow: 1;
+  height: auto;
 }
 
 .activity__card {
@@ -441,10 +442,6 @@ input {
   height: 100%;
   background-color: #ffffff;
   box-shadow: 5px 5px 10px 1px #c6c6c6;
-}
-.activitycard__title {
-  font-weight: bold;
-  padding: 0 12px;
 }
 .activitycard__img {
   position: relative;
@@ -462,6 +459,10 @@ input {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.activitycard__title {
+  font-weight: bold;
+  padding: 0 12px;
 }
 
 /* FOOTER */
