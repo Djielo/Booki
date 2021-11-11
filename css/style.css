@@ -282,13 +282,14 @@ input::placeholder {
   flex-wrap: wrap;
   height: auto;
   padding-top: 30px;
-  gap: 40px;
-  
+  gap: 40px;  
 }
 
 .lodging__card {
   display: flex;
   flex-direction: column;
+  aspect-ratio: 4/3;  
+  height: auto;
   background-color: white;
   border: 5px solid white;
   border-radius: 25px;
@@ -297,18 +298,13 @@ input::placeholder {
 }
 
 .lodgingcard__img {
-  border-radius: 25px 25px 0 0;
-  width: 100%;
+  border-radius: 25px 25px 0 0;  
   overflow: hidden;
 }
 
-.lodgingcard__img img {
-  aspect-ratio: 9/6;
-  width: 100%;
+.lodgingcard__img img {  
   -o-object-fit: cover;
   object-fit: cover;
-  min-height: 100px;
-  max-height: 140px;
   flex-grow: 1;
 }
 
