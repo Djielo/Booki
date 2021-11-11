@@ -12,8 +12,7 @@ body {
 
 main,
 header {
-  margin: 0 auto;
-  max-width: 1680px;
+  max-width: 1440px;
 }
 
 a {
@@ -21,6 +20,18 @@ a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+h1 {
+  font-size: 1.5vw;
+}
+
+.fas {
+  font-size: 20px;
+}
+
+.fa-star {
+  font-size: 12px;
 }
 
 .goodstar {
@@ -33,7 +44,7 @@ a {
 
 .filters__effect,
 .img__effect1 {
-  opacity: 1;  
+  opacity: 1;
   transition: box-shadow 0.5s 0.1s;
 }
 
@@ -56,28 +67,28 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  margin-top: 10px;
-  padding: 0 50px 0 50px;
+  align-content: center;  
+  padding: 0 50px;
 }
 
 .logo img {
-  margin: 40px 0 20px 20px;
-  padding: 10px 0;
+  margin: 40px 0 30px 20px;
+  padding-top: 12px;
   display: block;
-  width: 70px;
+  width: 60px;
   height: auto;
 }
 
 .navigation nav li {
-  padding-top: 40px;
+  padding-top: 46px;
 }
 
 .navigation nav a {
-  padding: 40px 30px;
+  padding: 46px 30px;
 }
 
 .navigation nav li a:hover {
+  padding-top: 43px;
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
@@ -99,8 +110,8 @@ header {
 }
 
 .research__subtitle {
-  margin-top: -15px;
-  font-size: 20px;
+  margin-top: -14px;
+  font-size: 16px;
 }
 
 .research__position {
@@ -116,8 +127,8 @@ header {
 
 .research__icon {
   display: flex;
-  height: 60px;
-  width: 60px;
+  height: 3.6vw;
+  width: 3.6vw;
   background: #f2f2f2;
   align-items: center;
   justify-content: center;
@@ -134,20 +145,16 @@ input {
   border: none;
   outline: none;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 17px;
 }
 
-.research__icon .fas {
-  font-size: 20px;
+.fa-search {
+  display: none;
 }
 
 input::placeholder {
   padding-left: 10px;
   color: black;
-}
-
-.fa-search {
-  display: none;
 }
 
 .research__txtbt {
@@ -159,9 +166,9 @@ input::placeholder {
   cursor: pointer;
   border: none;
   color: white;
-  font-size: 22px;
-  height: 60px;
-  width: 180px;
+  font-size: 17px;
+  height: 3.6vw;
+  width: 150px;
 }
 
 .research__txtbt:hover {
@@ -177,14 +184,14 @@ input::placeholder {
   margin-top: 24px;
   display: flex;
 }
-.filters__par {
+.filters__p {
   display: flex;
 }
 
 .filters__txt {
   display: flex;
   align-items: center;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
   margin-right: 30px;
 }
@@ -199,17 +206,17 @@ input::placeholder {
   display: flex;
   border: 2px solid #d9d9d9;
   border-radius: 75px;
-  height: 55px;
+  height: 3.4vw;
   width: -webkit-max-content;
   width: -moz-max-content;
-  margin: 10px;
+  margin: 0 10px;
   cursor: pointer;
 }
 
 .filters__button {
   display: flex;
-  height: 55px;
-  width: 55px;
+  height: 3.4vw;
+  width: 3.4vw;
   background-color: #deebff;
   border-radius: 50%;
   margin: -2px;
@@ -222,7 +229,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   margin: 20px;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -230,7 +237,7 @@ input::placeholder {
 
 .info {
   display: flex;
-  align-items: center;
+  align-items: center;  
   margin: 10px 0;
 }
 
@@ -250,8 +257,8 @@ input::placeholder {
 }
 
 .info__txt {
-  margin: 20px 0 30px 0;
-  font-size: 20px;
+  margin-left: 10px;  
+  font-size: 16px;
 }
 
 /* LODGING & MORE POPULAR */
@@ -260,6 +267,12 @@ input::placeholder {
   display: flex;
   gap: 45px;
   padding: 0 50px 0 50px;
+}
+
+.lodpopcard__title {
+  margin: 0 10px 0 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* LODGING */
@@ -274,7 +287,7 @@ input::placeholder {
 }
 
 .lodging__title {
-  margin: 55px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 .lodging__all {
@@ -282,41 +295,41 @@ input::placeholder {
   flex-wrap: wrap;
   height: auto;
   padding-top: 30px;
-  gap: 40px;  
+  gap: 40px;
 }
 
 .lodging__card {
   display: flex;
   flex-direction: column;
-  aspect-ratio: 4/3;  
-  height: auto;
+  aspect-ratio: 1/1;
+  height: 200px;
   background-color: white;
   border: 5px solid white;
   border-radius: 25px;
-  box-shadow: 5px 5px 10px 1px #f2f2f2;  
+  box-shadow: 5px 5px 10px 1px #f2f2f2;
   flex-grow: 1;
 }
 
 .lodgingcard__img {
-  border-radius: 25px 25px 0 0;  
+  border-radius: 25px 25px 0 0;
   overflow: hidden;
 }
 
-.lodgingcard__img img {  
+.lodgingcard__img img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
-  flex-grow: 1;
+  object-fit: cover;  
 }
 
 .lodgingcard__details {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
-}
-
-.lodgingcard__title {
-  margin: 5px 0 5px 10px;
-  font-size: 20px;
+  flex-shrink: 0;  
+  height: 70px;
+  flex-grow: 1;
+  padding: 5px 0;
 }
 
 .lodgingcard__price {
@@ -325,16 +338,15 @@ input::placeholder {
 
 .lodgingcard__stars {
   display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  padding: 5px 0;
-  margin-left: 10px;
-}
+  flex-direction: row;   
+  margin: 0 10px;  
+  }
 
 .lodging__readmore {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   padding: 30px 0;
+  margin-left: 5px;
 }
 
 /* MORE POPULAR */
@@ -353,12 +365,16 @@ input::placeholder {
 .popular__title {
   display: flex;
   justify-content: space-between;
-  margin: 55px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
-.fa-chart-line.popular h1 {
+.fa-chart-line.popular {
   flex-direction: row;
   margin: 30px 0 0 0;
+}
+
+.fa-chart-line {
+  font-size: 24px;
 }
 
 .popular__all {
@@ -402,11 +418,7 @@ input::placeholder {
   flex-direction: column;
   flex-shrink: 0;
   width: 60%;
-}
-
-.popularcard__title {
-  margin: 5px 0 5px 10px;
-  font-size: 20px;
+  padding: 10px;
 }
 
 .popularcard__price {
@@ -420,8 +432,8 @@ input::placeholder {
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
-  margin: 0 0 0 10px;
-  padding-bottom: 5px;
+  margin-left:10px;
+  padding-bottom: 10px;
 }
 
 /* ACTIVITY SECTION */
@@ -437,7 +449,7 @@ input::placeholder {
 .activity__all {
   display: flex;
   gap: 20px;
-  height: 520px;
+  height: 445px;
 }
 
 /* ACTIVITY CARDS */
@@ -492,6 +504,7 @@ input::placeholder {
   object-fit: cover;
 }
 .activitycard__title {
+  font-size: 16px;
   font-weight: bold;
   padding: 4px 0 4px 20px;
 }
@@ -511,13 +524,13 @@ footer {
 }
 
 .footer__a {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
   min-width: auto;
 }
 
 .footer__ul li {
-  font-size: 20px;
+  font-size: 16px;
   list-style: none;
   min-width: auto;
   padding-top: 20px;
