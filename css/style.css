@@ -72,7 +72,7 @@ header {
 }
 
 .logo img {
-  margin: 40px 0 30px 20px;
+  margin: 40px 0 26px 20px;
   padding-top: 12px;
   display: block;
   width: 60px;
@@ -110,19 +110,20 @@ header {
 }
 
 .research__subtitle {
-  margin-top: -14px;
+  margin-top: -11px;
   font-size: 16px;
 }
 
 .research__position {
   display: flex;
   height: auto;
+  justify-content: space-between;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   border-radius: 20px;
   border: 2px solid #f2f2f2;
-  justify-content: space-between;
+  margin: 20px 0 0 0;  
 }
 
 .research__icon {
@@ -238,7 +239,7 @@ input::placeholder {
 .info {
   display: flex;
   align-items: center;  
-  margin: 10px 0;
+  margin: 17px 0;
 }
 
 .info__circle {
@@ -258,7 +259,7 @@ input::placeholder {
 
 .info__txt {
   margin-left: 10px;  
-  font-size: 16px;
+  font-size: 17px;
 }
 
 /* LODGING & MORE POPULAR */
@@ -267,10 +268,12 @@ input::placeholder {
   display: flex;
   gap: 45px;
   padding: 0 50px 0 50px;
+  margin: 20px 0 0 0;
 }
 
 .lodpopcard__title {
   margin: 0 10px 0 10px;
+  
   font-size: 16px;
   font-weight: bold;
 }
@@ -287,15 +290,15 @@ input::placeholder {
 }
 
 .lodging__title {
-  margin: 40px 0 0 0;
+  margin: 43px 0 0 0;
 }
 
 .lodging__all {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  padding-top: 30px;
-  gap: 40px;
+  padding-top: 24px;
+  gap: 28px;
 }
 
 .lodging__card {
@@ -327,7 +330,7 @@ input::placeholder {
   justify-content: space-around;
   flex-direction: column;
   flex-shrink: 0;  
-  height: 70px;
+  height: 40%;
   flex-grow: 1;
   padding: 5px 0;
 }
@@ -345,7 +348,7 @@ input::placeholder {
 .lodging__readmore {
   font-weight: bold;
   font-size: 18px;
-  padding: 30px 0;
+  padding: 22px 0;
   margin-left: 5px;
 }
 
@@ -365,7 +368,7 @@ input::placeholder {
 .popular__title {
   display: flex;
   justify-content: space-between;
-  margin: 40px 0 0 0;
+  margin: 43px 0 0 0;
 }
 
 .fa-chart-line.popular {
@@ -383,7 +386,7 @@ input::placeholder {
   width: 100%;
   height: auto;
   gap: 40px;
-  padding-top: 30px;
+  padding-top: 28px;
 }
 
 .popular__card {
