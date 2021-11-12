@@ -386,14 +386,14 @@ input::placeholder {
   flex-direction: column;
   width: 100%;
   height: auto;
-  gap: 30px;
+  gap: 32px;
   padding-top: 28px;
 }
 
 .popular__card {
   display: flex;
   justify-content: space-between;
-  height: 144px;
+  height: 143px;
   aspect-ratio: 144/348;
   border: 5px solid white;
   background-color: white;
@@ -453,32 +453,53 @@ input::placeholder {
 
 .activity__all {
   display: flex;
-  gap: 20px;
-  height: 445px;
+  gap: 42px;  
 }
 
 /* ACTIVITY CARDS */
-
-.activitycard__col {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 100%;
-  width: 25%;
-}
 
 .activitycard__big {
   flex-grow: 1;
   width: 25%;
 }
-.activitycard__medium {
-  height: 280px;
-}
-.activitycard__small {
-  display: flex;
+
+.activitycard__col1 {
   flex-grow: 1;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;  
+  width: 25%;
+}
+
+.activitycard__medium1 {
+  aspect-ratio: 240/153;
+  height: 240px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.activitycard__small1 {  
+  aspect-ratio: 168/153;
+  height: 168px;
+  display: flex;    
+}
+
+.activitycard__col2 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;  
+  width: 25%;
+}
+.activitycard__medium2 {
+  aspect-ratio: 210/153;
+  height: 210px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.activitycard__small2 {
+  aspect-ratio: 196/153;
+  height: 196px;
+  display: flex;   
 }
 
 .activity__card {
@@ -491,24 +512,19 @@ input::placeholder {
   background-color: #ffffff;
   box-shadow: 5px 5px 10px 1px #f2f2f2;
 }
-.activitycard__img {
-  position: relative;
-  flex-grow: 1;
+.activitycard__img {    
   border-radius: 20px 20px 0 0;
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.activitycard__img img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  aspect-ratio: 5/8;
+.activitycard__img img { 
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.activitycard__title {
+.activitycard__title {  
   font-size: 16px;
   font-weight: bold;
   padding: 4px 0 4px 20px;
@@ -521,24 +537,25 @@ footer {
 }
 
 .footer__bgext {
-  max-width: 1680px;
   display: flex;
-  margin: auto;
-  padding: 10px;
   justify-content: space-between;
+  max-width: 1440px;    
+  padding: 28px 10px;
+  
 }
 
 .footer__a {
   font-size: 18px;
   font-weight: bold;
   min-width: auto;
+  margin-bottom: 15px;
 }
 
 .footer__ul li {
   font-size: 16px;
   list-style: none;
   min-width: auto;
-  padding-top: 20px;
+  padding: 6px 0;  
 }
 
 .footer__container1,
