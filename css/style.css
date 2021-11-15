@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.over:active {
+  border: none;
+  outline: none;
+}
+
 body {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
@@ -20,6 +25,11 @@ a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+  color: inherit;
+}
+
+a:visited {
+  color: black;
 }
 
 h1 {
@@ -429,7 +439,7 @@ input::placeholder {
   padding: 12px;
 }
 
-.popularcard__title {  
+.popularcard__title {
   font-size: 1.111vw;
   margin: 0 0 8px 0;
   font-weight: bold;
@@ -437,7 +447,6 @@ input::placeholder {
 
 .popupalcard__price {
   font-size: 0.972vw;
-  
 }
 
 .popularcard__stars {
