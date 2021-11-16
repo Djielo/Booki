@@ -174,6 +174,7 @@
 
   .footer__a {
     font-size: 1.512vw;
+    margin-left: 4vw;
   }
 }
 
@@ -235,7 +236,7 @@
     position: relative;
     display: flex;
     height: 14.5vw;
-    width: 100%;
+    width: 97%;
     border-radius: 5.3vw;
     border: 0.438vw solid #f2f2f2;
     margin: 9.4vw 0 0 0;
@@ -254,7 +255,7 @@
 
   .research__txt {
     display: flex;
-    align-items: center;    
+    align-items: center;
     margin: 0;
   }
 
@@ -263,16 +264,30 @@
     outline: none;
     font-weight: bold;
     font-size: 4.9vw;
+  }
 
+  input::-webkit-input-placeholder {
+    color: black;
+  }
+
+  input::-moz-placeholder {
+    color: black;
+  }
+
+  input:-ms-input-placeholder {
+    color: black;
+  }
+
+  input::-ms-input-placeholder {
+    color: black;
   }
 
   input::placeholder {
-    padding-left: -10vw;
     color: black;
   }
 
   .research__button {
-    position: absolute;    
+    position: absolute;
     right: 0;
     display: flex;
     align-items: center;
@@ -512,6 +527,8 @@
 
   .activity__all {
     flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     padding-top: 2vw;
     gap: 6vw;
@@ -547,6 +564,7 @@
   }
 
   .activitycard__img img {
+    -o-object-fit: cover;
     object-fit: cover;
   }
 
@@ -564,6 +582,7 @@
 
   .footer__a {
     font-size: 5vw;
+    margin-left: 0;
     padding-bottom: 4vw;
   }
 

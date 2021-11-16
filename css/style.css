@@ -25,11 +25,6 @@ a {
   text-decoration: none;
   color: black;
   cursor: pointer;
-  color: inherit;
-}
-
-a:visited {
-  color: black;
 }
 
 h1 {
@@ -128,7 +123,7 @@ header {
 .research__position {
   display: flex;
   justify-content: space-between;
-  height: auto 0;
+  height: auto;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -162,6 +157,26 @@ input {
 
 .fa-search {
   display: none;
+}
+
+input::-webkit-input-placeholder {
+  padding-left: 1.181vw;
+  color: black;
+}
+
+input::-moz-placeholder {
+  padding-left: 1.181vw;
+  color: black;
+}
+
+input:-ms-input-placeholder {
+  padding-left: 1.181vw;
+  color: black;
+}
+
+input::-ms-input-placeholder {
+  padding-left: 1.181vw;
+  color: black;
 }
 
 input::placeholder {
@@ -567,6 +582,7 @@ footer {
   font-weight: bold;
   min-width: auto;
   margin-bottom: 1.042vw;
+  margin-left: 2.7vw;
 }
 
 .footer__ul li {
