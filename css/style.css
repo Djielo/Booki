@@ -13,6 +13,7 @@
 body {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
+  max-width: 1440px;
 }
 
 main,
